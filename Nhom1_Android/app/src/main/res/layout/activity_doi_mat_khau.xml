@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99e8f7"
+    tools:context=".DoiMatKhau">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgMK"
+                android:layout_width="223dp"
+                android:layout_height="156dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/a64bfb801347815222f1e02a437785d0" />
+
+            <TextView
+                android:id="@+id/tvDoiMK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgMK"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="ĐỔI MẬT KHẨU"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMKcu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDoiMK"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Mat khau cu"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/etMKmoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etMKcu"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Mat khau moi"
+                android:inputType="textPassword" />
+
+
+            <EditText
+                android:id="@+id/etXacnhan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etMKmoi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Xac nhan mat khau"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/etXacnhan"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#FBF199"
+                android:text="Xác nhận"
+                android:textSize="18sp" />
+                  <!--<Button
+                            android:id="@+id/btnMain"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/etXacnhan"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="300dp"
+                            android:background="#FBF199"
+                            android:text="Trở về"
+                            android:textSize="18sp" />
+                    -->
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

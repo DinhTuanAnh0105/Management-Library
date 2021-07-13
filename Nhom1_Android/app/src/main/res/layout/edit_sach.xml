@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="13dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chỉnh sửa thông tin sách"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <!--<EditText
+        android:id="@+id/etEditMaSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Mã sách"
+        android:textSize="15sp" />-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên sách"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:id="@+id/etEditTenS" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên tác giả"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:id="@+id/etEditTG"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vị trí"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:id="@+id/etEditViTri"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:id="@+id/etEditSoLuong"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Năm xuất bản"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:id="@+id/etEditNamXb"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tình trạng"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:id="@+id/etEditTinhTrang"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Chỉnh sửa"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:id="@+id/btnEditSach"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Hủy"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:id="@+id/btnCancelEditS"
+            />
+    </LinearLayout>
+</LinearLayout>

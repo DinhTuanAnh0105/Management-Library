@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemSach">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgSach"
+                android:layout_width="160dp"
+                android:layout_height="111dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/logo_e_book_on_a_computer_screen_vector_4227151__2_" />
+
+            <TextView
+                android:id="@+id/tvThemSach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgSach"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="THÊM SÁCH"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMasach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvThemSach"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Ma sach"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/ettensach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etMasach"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="tên sach"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/etTenTG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ettensach"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Ten tac gia"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etVitri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etTenTG"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Vi tri"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etSoluong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etVitri"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="So luong"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etNamXB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etSoluong"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Nam xuat ban"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/etTinhtrang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etNamXB"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Tinh trang"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnThem"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etTinhtrang"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#FBF199"
+                android:text="Thêm"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnHuy"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etTinhtrang"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="#FBF199"
+                android:text="Hủy"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
